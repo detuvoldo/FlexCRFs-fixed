@@ -1,0 +1,3229 @@
+OPTION VALUES:
+
+Model directory: /home/detuvoldo/Documents/Tool/FlexCRFs/Ubuntu/apps/Chunking/
+Training data file: train.tagged
+Testing data file: test.tagged
+Unlabeled data file: data.untagged
+Model file: model.txt
+Training log file (this one): trainlog.txt
+
+First-order Markov CRFs
+
+Number of labels: 16
+Number of training sequences: 309
+Number of testing sequences: 309
+Number of unlabeled sequences: 0
+Number of context predicates: 2446
+Number of features: 2982
+Feature rare threshold: 1
+Context predicate rare threshold: 1
+Using multiple rare thresholds for features: 0
+Highlight feature: 0
+
+Number of training iterations: 200
+Initial lambda value:     0.0000
+Sigma square (for smoothing):   100.0000
+Epsilon for L-BFGS convergence:   0.000100
+Number of approximated hessian matrixes: 7
+Start to train ...
+
+Iteration: 1
+	Log-likelihood                       =      -6113.558133
+	Norm(log-likelihood gradient vector) =        631.245699
+	Norm(lambda vector)                  =          0.000000
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2184	1056	 48.35	 99.81	 65.14
+		b-location	93	0	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	6	6	100.00	  2.43	  4.74
+		i-aname	136	1	1	100.00	  0.74	  1.46
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.36	  7.09	 12.10
+		Avg2.	2205	2205	1073	 48.66	 48.66	 48.66
+
+
+	Current max tag-based F1:  48.66 (iteration 1)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 2
+	Log-likelihood                       =      -5554.241146
+	Norm(log-likelihood gradient vector) =        598.009274
+	Norm(lambda vector)                  =          1.000000
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2184	1056	 48.35	 99.81	 65.14
+		b-location	93	0	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	6	6	100.00	  2.43	  4.74
+		i-aname	136	1	1	100.00	  0.74	  1.46
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.36	  7.09	 12.10
+		Avg2.	2205	2205	1073	 48.66	 48.66	 48.66
+
+
+	Current max tag-based F1:  48.66 (iteration 1)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 3
+	Log-likelihood                       =      -4562.550709
+	Norm(log-likelihood gradient vector) =       4773.495810
+	Norm(lambda vector)                  =          5.000000
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2184	1056	 48.35	 99.81	 65.14
+		b-location	93	0	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	6	6	100.00	  2.43	  4.74
+		i-aname	136	1	1	100.00	  0.74	  1.46
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.36	  7.09	 12.10
+		Avg2.	2205	2205	1073	 48.66	 48.66	 48.66
+
+
+	Current max tag-based F1:  48.66 (iteration 1)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 4
+	Log-likelihood                       =      -5194.019904
+	Norm(log-likelihood gradient vector) =        558.891157
+	Norm(lambda vector)                  =          1.661245
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2151	1053	 48.95	 99.53	 65.63
+		b-location	93	1	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	28	26	 92.86	 10.53	 18.91
+		i-aname	136	11	11	100.00	  8.09	 14.97
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 40.95	  8.03	 13.43
+		Avg2.	2205	2205	1100	 49.89	 49.89	 49.89
+
+
+	Current max tag-based F1:  49.89 (iteration 4)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 5
+	Log-likelihood                       =      -8817.704035
+	Norm(log-likelihood gradient vector) =    1332481.178172
+	Norm(lambda vector)                  =         19.687966
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2158	1053	 48.80	 99.53	 65.49
+		b-location	93	1	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	25	23	 92.00	  9.31	 16.91
+		i-aname	136	7	7	100.00	  5.15	  9.79
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 40.88	  7.78	 13.07
+		Avg2.	2205	2205	1093	 49.57	 49.57	 49.57
+
+
+	Current max tag-based F1:  49.89 (iteration 4)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 6
+	Log-likelihood                       =      -5325.634442
+	Norm(log-likelihood gradient vector) =      33220.583404
+	Norm(lambda vector)                  =         10.908806
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2170	1054	 48.57	 99.62	 65.30
+		b-location	93	1	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	18	17	 94.44	  6.88	 12.83
+		i-aname	136	2	2	100.00	  1.47	  2.90
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.02	  7.40	 12.54
+		Avg2.	2205	2205	1083	 49.12	 49.12	 49.12
+
+
+	Current max tag-based F1:  49.89 (iteration 4)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 7
+	Log-likelihood                       =      -4017.411536
+	Norm(log-likelihood gradient vector) =       4878.963067
+	Norm(lambda vector)                  =          6.930733
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2183	1055	 48.33	 99.72	 65.10
+		b-location	93	1	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	6	6	100.00	  2.43	  4.74
+		i-aname	136	1	1	100.00	  0.74	  1.46
+		b-datetime	80	3	1	 33.33	  1.25	  2.41
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.35	  7.08	 12.09
+		Avg2.	2205	2205	1072	 48.62	 48.62	 48.62
+
+
+	Current max tag-based F1:  49.89 (iteration 4)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 8
+	Log-likelihood                       =      -4619.121464
+	Norm(log-likelihood gradient vector) =        463.439884
+	Norm(lambda vector)                  =          2.873659
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1941	1047	 53.94	 98.96	 69.82
+		b-location	93	3	2	 66.67	  2.15	  4.17
+		i-datetime	155	15	14	 93.33	  9.03	 16.47
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	11	10	 90.91	  4.48	  8.55
+		b-aname	247	166	151	 90.96	 61.13	 73.12
+		i-aname	136	56	56	100.00	 41.18	 58.33
+		b-datetime	80	4	2	 50.00	  2.50	  4.76
+		b-email	6	2	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	2	1	 50.00	  2.70	  5.13
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	3	3	100.00	  4.69	  8.96
+		i-cnumber	13	1	1	100.00	  7.69	 14.29
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 55.99	 14.82	 23.43
+		Avg2.	2205	2205	1288	 58.41	 58.41	 58.41
+
+
+	Current max tag-based F1:  58.41 (iteration 8)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 9
+	Log-likelihood                       =      -3303.842719
+	Norm(log-likelihood gradient vector) =      10187.724351
+	Norm(lambda vector)                  =         16.239034
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	2129	1051	 49.37	 99.34	 65.96
+		b-location	93	1	0	  0.00	  0.00	  0.00
+		i-datetime	155	5	4	 80.00	  2.58	  5.00
+		b-cnumber	16	0	0	  0.00	  0.00	  0.00
+		i-location	223	2	2	100.00	  0.90	  1.78
+		b-aname	247	40	36	 90.00	 14.57	 25.09
+		i-aname	136	20	20	100.00	 14.71	 25.64
+		b-datetime	80	4	2	 50.00	  2.50	  4.76
+		b-email	6	0	0	  0.00	  0.00	  0.00
+		b-cname	39	1	1	100.00	  2.56	  5.00
+		b-url	37	1	0	  0.00	  0.00	  0.00
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	2	2	100.00	  3.12	  6.06
+		i-cnumber	13	0	0	  0.00	  0.00	  0.00
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 41.84	  8.77	 14.50
+		Avg2.	2205	2205	1118	 50.70	 50.70	 50.70
+
+
+	Current max tag-based F1:  58.41 (iteration 8)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 10
+	Log-likelihood                       =      -3701.125416
+	Norm(log-likelihood gradient vector) =        448.128055
+	Norm(lambda vector)                  =          5.585881
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1519	1024	 67.41	 96.79	 79.47
+		b-location	93	21	17	 80.95	 18.28	 29.82
+		i-datetime	155	101	95	 94.06	 61.29	 74.22
+		b-cnumber	16	4	1	 25.00	  6.25	 10.00
+		i-location	223	126	116	 92.06	 52.02	 66.48
+		b-aname	247	262	226	 86.26	 91.50	 88.80
+		i-aname	136	117	111	 94.87	 81.62	 87.75
+		b-datetime	80	35	31	 88.57	 38.75	 53.91
+		b-email	6	2	0	  0.00	  0.00	  0.00
+		b-cname	39	5	4	 80.00	 10.26	 18.18
+		b-url	37	5	4	 80.00	 10.81	 19.05
+		i-number	12	0	0	  0.00	  0.00	  0.00
+		i-url	64	7	7	100.00	 10.94	 19.72
+		i-cnumber	13	1	1	100.00	  7.69	 14.29
+		i-cname	20	0	0	  0.00	  0.00	  0.00
+		b-number	6	0	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 61.82	 30.39	 40.75
+		Avg2.	2205	2205	1637	 74.24	 74.24	 74.24
+
+
+	Current max tag-based F1:  74.24 (iteration 10)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 11
+	Log-likelihood                       =      -2111.654130
+	Norm(log-likelihood gradient vector) =       1031.401298
+	Norm(lambda vector)                  =         19.378236
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1253	995	 79.41	 94.05	 86.11
+		b-location	93	52	43	 82.69	 46.24	 59.31
+		i-datetime	155	145	132	 91.03	 85.16	 88.00
+		b-cnumber	16	13	4	 30.77	 25.00	 27.59
+		i-location	223	191	162	 84.82	 72.65	 78.26
+		b-aname	247	256	223	 87.11	 90.28	 88.67
+		i-aname	136	124	114	 91.94	 83.82	 87.69
+		b-datetime	80	71	60	 84.51	 75.00	 79.47
+		b-email	6	12	0	  0.00	  0.00	  0.00
+		b-cname	39	19	18	 94.74	 46.15	 62.07
+		b-url	37	14	12	 85.71	 32.43	 47.06
+		i-number	12	6	5	 83.33	 41.67	 55.56
+		i-url	64	36	36	100.00	 56.25	 72.00
+		i-cnumber	13	8	5	 62.50	 38.46	 47.62
+		i-cname	20	2	0	  0.00	  0.00	  0.00
+		b-number	6	3	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 66.16	 49.20	 56.43
+		Avg2.	2205	2205	1809	 82.04	 82.04	 82.04
+
+
+	Current max tag-based F1:  82.04 (iteration 11)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 12
+	Log-likelihood                       =      -1735.284365
+	Norm(log-likelihood gradient vector) =        394.266617
+	Norm(lambda vector)                  =         29.564365
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1151	977	 84.88	 92.34	 88.46
+		b-location	93	62	53	 85.48	 56.99	 68.39
+		i-datetime	155	163	141	 86.50	 90.97	 88.68
+		b-cnumber	16	18	4	 22.22	 25.00	 23.53
+		i-location	223	197	170	 86.29	 76.23	 80.95
+		b-aname	247	260	226	 86.92	 91.50	 89.15
+		i-aname	136	126	114	 90.48	 83.82	 87.02
+		b-datetime	80	74	62	 83.78	 77.50	 80.52
+		b-email	6	26	0	  0.00	  0.00	  0.00
+		b-cname	39	33	30	 90.91	 76.92	 83.33
+		b-url	37	22	18	 81.82	 48.65	 61.02
+		i-number	12	10	7	 70.00	 58.33	 63.64
+		i-url	64	44	44	100.00	 68.75	 81.48
+		i-cnumber	13	12	7	 58.33	 53.85	 56.00
+		i-cname	20	3	0	  0.00	  0.00	  0.00
+		b-number	6	4	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 64.23	 56.30	 60.00
+		Avg2.	2205	2205	1853	 84.04	 84.04	 84.04
+
+
+	Current max tag-based F1:  84.04 (iteration 12)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 13
+	Log-likelihood                       =      -1677.840820
+	Norm(log-likelihood gradient vector) =        181.941841
+	Norm(lambda vector)                  =         36.484409
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1042	937	 89.92	 88.56	 89.24
+		b-location	93	78	60	 76.92	 64.52	 70.18
+		i-datetime	155	165	141	 85.45	 90.97	 88.12
+		b-cnumber	16	33	7	 21.21	 43.75	 28.57
+		i-location	223	201	178	 88.56	 79.82	 83.96
+		b-aname	247	263	229	 87.07	 92.71	 89.80
+		i-aname	136	127	115	 90.55	 84.56	 87.45
+		b-datetime	80	84	66	 78.57	 82.50	 80.49
+		b-email	6	50	1	  2.00	 16.67	  3.57
+		b-cname	39	44	37	 84.09	 94.87	 89.16
+		b-url	37	26	22	 84.62	 59.46	 69.84
+		i-number	12	13	8	 61.54	 66.67	 64.00
+		i-url	64	47	47	100.00	 73.44	 84.68
+		i-cnumber	13	25	9	 36.00	 69.23	 47.37
+		i-cname	20	3	0	  0.00	  0.00	  0.00
+		b-number	6	4	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 61.66	 62.98	 62.31
+		Avg2.	2205	2205	1857	 84.22	 84.22	 84.22
+
+
+	Current max tag-based F1:  84.22 (iteration 13)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 14
+	Log-likelihood                       =      -1670.685283
+	Norm(log-likelihood gradient vector) =         94.682012
+	Norm(lambda vector)                  =         45.589644
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1004	925	 92.13	 87.43	 89.72
+		b-location	93	79	63	 79.75	 67.74	 73.26
+		i-datetime	155	167	144	 86.23	 92.90	 89.44
+		b-cnumber	16	42	13	 30.95	 81.25	 44.83
+		i-location	223	204	180	 88.24	 80.72	 84.31
+		b-aname	247	263	229	 87.07	 92.71	 89.80
+		i-aname	136	127	115	 90.55	 84.56	 87.45
+		b-datetime	80	85	69	 81.18	 86.25	 83.64
+		b-email	6	56	1	  1.79	 16.67	  3.23
+		b-cname	39	45	37	 82.22	 94.87	 88.10
+		b-url	37	30	24	 80.00	 64.86	 71.64
+		i-number	12	15	9	 60.00	 75.00	 66.67
+		i-url	64	53	52	 98.11	 81.25	 88.89
+		i-cnumber	13	27	10	 37.04	 76.92	 50.00
+		i-cname	20	4	0	  0.00	  0.00	  0.00
+		b-number	6	4	0	  0.00	  0.00	  0.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 62.20	 67.70	 64.83
+		Avg2.	2205	2205	1871	 84.85	 84.85	 84.85
+
+
+	Current max tag-based F1:  84.85 (iteration 14)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 15
+	Log-likelihood                       =      -1618.399952
+	Norm(log-likelihood gradient vector) =         83.432428
+	Norm(lambda vector)                  =         53.845477
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1002	944	 94.21	 89.22	 91.65
+		b-location	93	84	67	 79.76	 72.04	 75.71
+		i-datetime	155	163	147	 90.18	 94.84	 92.45
+		b-cnumber	16	38	13	 34.21	 81.25	 48.15
+		i-location	223	206	185	 89.81	 82.96	 86.25
+		b-aname	247	260	233	 89.62	 94.33	 91.91
+		i-aname	136	129	119	 92.25	 87.50	 89.81
+		b-datetime	80	82	70	 85.37	 87.50	 86.42
+		b-email	6	48	2	  4.17	 33.33	  7.41
+		b-cname	39	45	37	 82.22	 94.87	 88.10
+		b-url	37	39	25	 64.10	 67.57	 65.79
+		i-number	12	15	9	 60.00	 75.00	 66.67
+		i-url	64	55	55	100.00	 85.94	 92.44
+		i-cnumber	13	28	11	 39.29	 84.62	 53.66
+		i-cname	20	7	3	 42.86	 15.00	 22.22
+		b-number	6	4	1	 25.00	 16.67	 20.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 67.06	 72.67	 69.75
+		Avg2.	2205	2205	1921	 87.12	 87.12	 87.12
+
+
+	Current max tag-based F1:  87.12 (iteration 15)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 16
+	Log-likelihood                       =      -1335.854048
+	Norm(log-likelihood gradient vector) =         67.125054
+	Norm(lambda vector)                  =         64.615902
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	991	952	 96.06	 89.98	 92.92
+		b-location	93	58	53	 91.38	 56.99	 70.20
+		i-datetime	155	154	147	 95.45	 94.84	 95.15
+		b-cnumber	16	40	16	 40.00	100.00	 57.14
+		i-location	223	291	213	 73.20	 95.52	 82.88
+		b-aname	247	233	223	 95.71	 90.28	 92.92
+		i-aname	136	137	124	 90.51	 91.18	 90.84
+		b-datetime	80	76	73	 96.05	 91.25	 93.59
+		b-email	6	29	2	  6.90	 33.33	 11.43
+		b-cname	39	42	37	 88.10	 94.87	 91.36
+		b-url	37	39	31	 79.49	 83.78	 81.58
+		i-number	12	13	11	 84.62	 91.67	 88.00
+		i-url	64	57	56	 98.25	 87.50	 92.56
+		i-cnumber	13	22	12	 54.55	 92.31	 68.57
+		i-cname	20	19	9	 47.37	 45.00	 46.15
+		b-number	6	4	2	 50.00	 33.33	 40.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 74.23	 79.49	 76.77
+		Avg2.	2205	2205	1961	 88.93	 88.93	 88.93
+
+
+	Current max tag-based F1:  88.93 (iteration 16)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 17
+	Log-likelihood                       =      -1050.175725
+	Norm(log-likelihood gradient vector) =        155.654336
+	Norm(lambda vector)                  =         81.936937
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1150	999	 86.87	 94.42	 90.49
+		b-location	93	63	56	 88.89	 60.22	 71.79
+		i-datetime	155	142	138	 97.18	 89.03	 92.93
+		b-cnumber	16	33	14	 42.42	 87.50	 57.14
+		i-location	223	176	166	 94.32	 74.44	 83.21
+		b-aname	247	211	205	 97.16	 83.00	 89.52
+		i-aname	136	137	125	 91.24	 91.91	 91.58
+		b-datetime	80	72	69	 95.83	 86.25	 90.79
+		b-email	6	24	2	  8.33	 33.33	 13.33
+		b-cname	39	40	37	 92.50	 94.87	 93.67
+		b-url	37	43	31	 72.09	 83.78	 77.50
+		i-number	12	16	11	 68.75	 91.67	 78.57
+		i-url	64	57	57	100.00	 89.06	 94.21
+		i-cnumber	13	21	12	 57.14	 92.31	 70.59
+		i-cname	20	15	10	 66.67	 50.00	 57.14
+		b-number	6	5	2	 40.00	 33.33	 36.36
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 74.96	 77.20	 76.06
+		Avg2.	2205	2205	1934	 87.71	 87.71	 87.71
+
+
+	Current max tag-based F1:  88.93 (iteration 16)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 18
+	Log-likelihood                       =      -1154.841911
+	Norm(log-likelihood gradient vector) =        394.811394
+	Norm(lambda vector)                  =         96.947060
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1054	985	 93.45	 93.10	 93.28
+		b-location	93	62	56	 90.32	 60.22	 72.26
+		i-datetime	155	152	146	 96.05	 94.19	 95.11
+		b-cnumber	16	37	15	 40.54	 93.75	 56.60
+		i-location	223	224	200	 89.29	 89.69	 89.49
+		b-aname	247	228	220	 96.49	 89.07	 92.63
+		i-aname	136	137	124	 90.51	 91.18	 90.84
+		b-datetime	80	76	72	 94.74	 90.00	 92.31
+		b-email	6	27	2	  7.41	 33.33	 12.12
+		b-cname	39	43	37	 86.05	 94.87	 90.24
+		b-url	37	41	31	 75.61	 83.78	 79.49
+		i-number	12	16	11	 68.75	 91.67	 78.57
+		i-url	64	58	57	 98.28	 89.06	 93.44
+		i-cnumber	13	20	12	 60.00	 92.31	 72.73
+		i-cname	20	24	9	 37.50	 45.00	 40.91
+		b-number	6	6	3	 50.00	 50.00	 50.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 73.44	 80.08	 76.61
+		Avg2.	2205	2205	1980	 89.80	 89.80	 89.80
+
+
+	Current max tag-based F1:  89.80 (iteration 18)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 19
+	Log-likelihood                       =       -953.278519
+	Norm(log-likelihood gradient vector) =        112.993388
+	Norm(lambda vector)                  =         88.579842
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1024	982	 95.90	 92.82	 94.33
+		b-location	93	75	69	 92.00	 74.19	 82.14
+		i-datetime	155	156	150	 96.15	 96.77	 96.46
+		b-cnumber	16	32	16	 50.00	100.00	 66.67
+		i-location	223	220	201	 91.36	 90.13	 90.74
+		b-aname	247	231	222	 96.10	 89.88	 92.89
+		i-aname	136	139	125	 89.93	 91.91	 90.91
+		b-datetime	80	81	75	 92.59	 93.75	 93.17
+		b-email	6	26	2	  7.69	 33.33	 12.50
+		b-cname	39	43	37	 86.05	 94.87	 90.24
+		b-url	37	45	31	 68.89	 83.78	 75.61
+		i-number	12	17	11	 64.71	 91.67	 75.86
+		i-url	64	58	57	 98.28	 89.06	 93.44
+		i-cnumber	13	22	12	 54.55	 92.31	 68.57
+		i-cname	20	31	11	 35.48	 55.00	 43.14
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 73.73	 82.47	 77.85
+		Avg2.	2205	2205	2004	 90.88	 90.88	 90.88
+
+
+	Current max tag-based F1:  90.88 (iteration 19)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 20
+	Log-likelihood                       =       -890.741297
+	Norm(log-likelihood gradient vector) =         50.739694
+	Norm(lambda vector)                  =         88.955587
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1017	984	 96.76	 93.01	 94.84
+		b-location	93	83	75	 90.36	 80.65	 85.23
+		i-datetime	155	155	151	 97.42	 97.42	 97.42
+		b-cnumber	16	30	16	 53.33	100.00	 69.57
+		i-location	223	212	200	 94.34	 89.69	 91.95
+		b-aname	247	232	223	 96.12	 90.28	 93.11
+		i-aname	136	139	126	 90.65	 92.65	 91.64
+		b-datetime	80	83	76	 91.57	 95.00	 93.25
+		b-email	6	29	2	  6.90	 33.33	 11.43
+		b-cname	39	44	37	 84.09	 94.87	 89.16
+		b-url	37	47	32	 68.09	 86.49	 76.19
+		i-number	12	19	11	 57.89	 91.67	 70.97
+		i-url	64	57	57	100.00	 89.06	 94.21
+		i-cnumber	13	22	12	 54.55	 92.31	 68.57
+		i-cname	20	30	11	 36.67	 55.00	 44.00
+		b-number	6	6	3	 50.00	 50.00	 50.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 73.05	 83.21	 77.80
+		Avg2.	2205	2205	2016	 91.43	 91.43	 91.43
+
+
+	Current max tag-based F1:  91.43 (iteration 20)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 21
+	Log-likelihood                       =       -842.256470
+	Norm(log-likelihood gradient vector) =         41.742869
+	Norm(lambda vector)                  =         90.355927
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1028	992	 96.50	 93.76	 95.11
+		b-location	93	92	79	 85.87	 84.95	 85.41
+		i-datetime	155	154	150	 97.40	 96.77	 97.09
+		b-cnumber	16	25	16	 64.00	100.00	 78.05
+		i-location	223	208	200	 96.15	 89.69	 92.81
+		b-aname	247	232	223	 96.12	 90.28	 93.11
+		i-aname	136	140	127	 90.71	 93.38	 92.03
+		b-datetime	80	83	75	 90.36	 93.75	 92.02
+		b-email	6	22	2	  9.09	 33.33	 14.29
+		b-cname	39	43	37	 86.05	 94.87	 90.24
+		b-url	37	46	31	 67.39	 83.78	 74.70
+		i-number	12	20	11	 55.00	 91.67	 68.75
+		i-url	64	57	57	100.00	 89.06	 94.21
+		i-cnumber	13	20	13	 65.00	100.00	 78.79
+		i-cname	20	27	12	 44.44	 60.00	 51.06
+		b-number	6	8	3	 37.50	 50.00	 42.86
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 73.85	 84.08	 78.63
+		Avg2.	2205	2205	2028	 91.97	 91.97	 91.97
+
+
+	Current max tag-based F1:  91.97 (iteration 21)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 22
+	Log-likelihood                       =       -774.916271
+	Norm(log-likelihood gradient vector) =         38.555826
+	Norm(lambda vector)                  =         94.342402
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1041	1004	 96.45	 94.90	 95.66
+		b-location	93	93	81	 87.10	 87.10	 87.10
+		i-datetime	155	154	151	 98.05	 97.42	 97.73
+		b-cnumber	16	23	16	 69.57	100.00	 82.05
+		i-location	223	211	204	 96.68	 91.48	 94.01
+		b-aname	247	236	226	 95.76	 91.50	 93.58
+		i-aname	136	131	127	 96.95	 93.38	 95.13
+		b-datetime	80	80	76	 95.00	 95.00	 95.00
+		b-email	6	27	4	 14.81	 66.67	 24.24
+		b-cname	39	42	37	 88.10	 94.87	 91.36
+		b-url	37	41	31	 75.61	 83.78	 79.49
+		i-number	12	18	12	 66.67	100.00	 80.00
+		i-url	64	58	58	100.00	 90.62	 95.08
+		i-cnumber	13	16	13	 81.25	100.00	 89.66
+		i-cname	20	25	14	 56.00	 70.00	 62.22
+		b-number	6	9	3	 33.33	 50.00	 40.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 78.21	 87.92	 82.78
+		Avg2.	2205	2205	2057	 93.29	 93.29	 93.29
+
+
+	Current max tag-based F1:  93.29 (iteration 22)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 23
+	Log-likelihood                       =       -662.883370
+	Norm(log-likelihood gradient vector) =         39.371625
+	Norm(lambda vector)                  =        105.920482
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1060	1018	 96.04	 96.22	 96.13
+		b-location	93	97	82	 84.54	 88.17	 86.32
+		i-datetime	155	151	148	 98.01	 95.48	 96.73
+		b-cnumber	16	20	15	 75.00	 93.75	 83.33
+		i-location	223	213	205	 96.24	 91.93	 94.04
+		b-aname	247	263	242	 92.02	 97.98	 94.90
+		i-aname	136	125	121	 96.80	 88.97	 92.72
+		b-datetime	80	74	73	 98.65	 91.25	 94.81
+		b-email	6	16	6	 37.50	100.00	 54.55
+		b-cname	39	39	37	 94.87	 94.87	 94.87
+		b-url	37	36	29	 80.56	 78.38	 79.45
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	60	 98.36	 93.75	 96.00
+		i-cnumber	13	16	13	 81.25	100.00	 89.66
+		i-cname	20	13	11	 84.62	 55.00	 66.67
+		b-number	6	8	3	 37.50	 50.00	 42.86
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 84.02	 88.48	 86.19
+		Avg2.	2205	2205	2075	 94.10	 94.10	 94.10
+
+
+	Current max tag-based F1:  94.10 (iteration 23)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 24
+	Log-likelihood                       =       -575.548559
+	Norm(log-likelihood gradient vector) =         49.931500
+	Norm(lambda vector)                  =        120.048225
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1050	1020	 97.14	 96.41	 96.77
+		b-location	93	90	83	 92.22	 89.25	 90.71
+		i-datetime	155	157	152	 96.82	 98.06	 97.44
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	212	205	 96.70	 91.93	 94.25
+		b-aname	247	247	236	 95.55	 95.55	 95.55
+		i-aname	136	125	125	100.00	 91.91	 95.79
+		b-datetime	80	79	77	 97.47	 96.25	 96.86
+		b-email	6	23	6	 26.09	100.00	 41.38
+		b-cname	39	41	37	 90.24	 94.87	 92.50
+		b-url	37	42	34	 80.95	 91.89	 86.08
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	60	 98.36	 93.75	 96.00
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	19	13	 68.42	 65.00	 66.67
+		b-number	6	10	3	 30.00	 50.00	 37.50
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 82.99	 90.93	 86.78
+		Avg2.	2205	2205	2092	 94.88	 94.88	 94.88
+
+
+	Current max tag-based F1:  94.88 (iteration 24)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 25
+	Log-likelihood                       =       -519.707528
+	Norm(log-likelihood gradient vector) =         25.688425
+	Norm(lambda vector)                  =        127.545800
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1039	1022	 98.36	 96.60	 97.47
+		b-location	93	89	82	 92.13	 88.17	 90.11
+		i-datetime	155	158	154	 97.47	 99.35	 98.40
+		b-cnumber	16	23	16	 69.57	100.00	 82.05
+		i-location	223	215	206	 95.81	 92.38	 94.06
+		b-aname	247	252	241	 95.63	 97.57	 96.59
+		i-aname	136	128	128	100.00	 94.12	 96.97
+		b-datetime	80	79	77	 97.47	 96.25	 96.86
+		b-email	6	20	6	 30.00	100.00	 46.15
+		b-cname	39	41	37	 90.24	 94.87	 92.50
+		b-url	37	43	34	 79.07	 91.89	 85.00
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	60	60	100.00	 93.75	 96.77
+		i-cnumber	13	16	13	 81.25	100.00	 89.66
+		i-cname	20	21	15	 71.43	 75.00	 73.17
+		b-number	6	8	3	 37.50	 50.00	 42.86
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 83.02	 91.87	 87.22
+		Avg2.	2205	2205	2106	 95.51	 95.51	 95.51
+
+
+	Current max tag-based F1:  95.51 (iteration 25)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 26
+	Log-likelihood                       =       -484.055234
+	Norm(log-likelihood gradient vector) =         16.542594
+	Norm(lambda vector)                  =        127.645447
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1046	1029	 98.37	 97.26	 97.81
+		b-location	93	87	83	 95.40	 89.25	 92.22
+		i-datetime	155	157	154	 98.09	 99.35	 98.72
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	224	212	 94.64	 95.07	 94.85
+		b-aname	247	245	239	 97.55	 96.76	 97.15
+		i-aname	136	128	128	100.00	 94.12	 96.97
+		b-datetime	80	81	79	 97.53	 98.75	 98.14
+		b-email	6	17	6	 35.29	100.00	 52.17
+		b-cname	39	41	37	 90.24	 94.87	 92.50
+		b-url	37	43	35	 81.40	 94.59	 87.50
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	60	60	100.00	 93.75	 96.77
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	20	15	 75.00	 75.00	 75.00
+		b-number	6	7	3	 42.86	 50.00	 46.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 85.10	 92.42	 88.61
+		Avg2.	2205	2205	2121	 96.19	 96.19	 96.19
+
+
+	Current max tag-based F1:  96.19 (iteration 26)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 27
+	Log-likelihood                       =       -450.090140
+	Norm(log-likelihood gradient vector) =         14.608556
+	Norm(lambda vector)                  =        133.049377
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1062	1040	 97.93	 98.30	 98.11
+		b-location	93	88	84	 95.45	 90.32	 92.82
+		i-datetime	155	156	154	 98.72	 99.35	 99.04
+		b-cnumber	16	20	16	 80.00	100.00	 88.89
+		i-location	223	215	210	 97.67	 94.17	 95.89
+		b-aname	247	241	235	 97.51	 95.14	 96.31
+		i-aname	136	130	129	 99.23	 94.85	 96.99
+		b-datetime	80	81	79	 97.53	 98.75	 98.14
+		b-email	6	14	6	 42.86	100.00	 60.00
+		b-cname	39	41	37	 90.24	 94.87	 92.50
+		b-url	37	44	36	 81.82	 97.30	 88.89
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	60	 98.36	 93.75	 96.00
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	16	 72.73	 80.00	 76.19
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.70	 92.93	 91.28
+		Avg2.	2205	2205	2130	 96.60	 96.60	 96.60
+
+
+	Current max tag-based F1:  96.60 (iteration 27)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 28
+	Log-likelihood                       =       -409.524747
+	Norm(log-likelihood gradient vector) =         30.422383
+	Norm(lambda vector)                  =        146.859112
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1033	1027	 99.42	 97.07	 98.23
+		b-location	93	89	84	 94.38	 90.32	 92.31
+		i-datetime	155	156	154	 98.72	 99.35	 99.04
+		b-cnumber	16	19	16	 84.21	100.00	 91.43
+		i-location	223	232	218	 93.97	 97.76	 95.82
+		b-aname	247	256	243	 94.92	 98.38	 96.62
+		i-aname	136	129	128	 99.22	 94.12	 96.60
+		b-datetime	80	81	79	 97.53	 98.75	 98.14
+		b-email	6	13	6	 46.15	100.00	 63.16
+		b-cname	39	40	38	 95.00	 97.44	 96.20
+		b-url	37	39	35	 89.74	 94.59	 92.11
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	64	61	 95.31	 95.31	 95.31
+		i-cnumber	13	16	13	 81.25	100.00	 89.66
+		i-cname	20	22	16	 72.73	 80.00	 76.19
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.68	 93.32	 91.46
+		Avg2.	2205	2205	2133	 96.73	 96.73	 96.73
+
+
+	Current max tag-based F1:  96.73 (iteration 28)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 29
+	Log-likelihood                       =       -408.439765
+	Norm(log-likelihood gradient vector) =         38.995037
+	Norm(lambda vector)                  =        153.603433
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1049	1038	 98.95	 98.11	 98.53
+		b-location	93	88	84	 95.45	 90.32	 92.82
+		i-datetime	155	156	154	 98.72	 99.35	 99.04
+		b-cnumber	16	20	16	 80.00	100.00	 88.89
+		i-location	223	225	216	 96.00	 96.86	 96.43
+		b-aname	247	250	242	 96.80	 97.98	 97.38
+		i-aname	136	130	129	 99.23	 94.85	 96.99
+		b-datetime	80	81	79	 97.53	 98.75	 98.14
+		b-email	6	13	6	 46.15	100.00	 63.16
+		b-cname	39	39	37	 94.87	 94.87	 94.87
+		b-url	37	43	35	 81.40	 94.59	 87.50
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	62	61	 98.39	 95.31	 96.83
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	19	16	 84.21	 80.00	 82.05
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.80	 93.19	 91.98
+		Avg2.	2205	2205	2141	 97.10	 97.10	 97.10
+
+
+	Current max tag-based F1:  97.10 (iteration 29)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 30
+	Log-likelihood                       =       -384.583711
+	Norm(log-likelihood gradient vector) =         13.607227
+	Norm(lambda vector)                  =        149.416957
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1049	1038	 98.95	 98.11	 98.53
+		b-location	93	88	84	 95.45	 90.32	 92.82
+		i-datetime	155	156	154	 98.72	 99.35	 99.04
+		b-cnumber	16	20	16	 80.00	100.00	 88.89
+		i-location	223	225	216	 96.00	 96.86	 96.43
+		b-aname	247	250	242	 96.80	 97.98	 97.38
+		i-aname	136	130	129	 99.23	 94.85	 96.99
+		b-datetime	80	81	79	 97.53	 98.75	 98.14
+		b-email	6	13	6	 46.15	100.00	 63.16
+		b-cname	39	39	37	 94.87	 94.87	 94.87
+		b-url	37	43	35	 81.40	 94.59	 87.50
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	62	61	 98.39	 95.31	 96.83
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	19	16	 84.21	 80.00	 82.05
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.80	 93.19	 91.98
+		Avg2.	2205	2205	2141	 97.10	 97.10	 97.10
+
+
+	Current max tag-based F1:  97.10 (iteration 29)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 31
+	Log-likelihood                       =       -376.058376
+	Norm(log-likelihood gradient vector) =          9.991067
+	Norm(lambda vector)                  =        148.928677
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1060	1045	 98.58	 98.77	 98.68
+		b-location	93	91	87	 95.60	 93.55	 94.57
+		i-datetime	155	155	154	 99.35	 99.35	 99.35
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	222	217	 97.75	 97.31	 97.53
+		b-aname	247	244	240	 98.36	 97.17	 97.76
+		i-aname	136	130	129	 99.23	 94.85	 96.99
+		b-datetime	80	79	79	100.00	 98.75	 99.37
+		b-email	6	13	6	 46.15	100.00	 63.16
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	42	35	 83.33	 94.59	 88.61
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.48	 93.57	 92.51
+		Avg2.	2205	2205	2151	 97.55	 97.55	 97.55
+
+
+	Current max tag-based F1:  97.55 (iteration 31)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 32
+	Log-likelihood                       =       -361.040589
+	Norm(log-likelihood gradient vector) =         17.426420
+	Norm(lambda vector)                  =        150.129092
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1043	 98.68	 98.58	 98.63
+		b-location	93	91	87	 95.60	 93.55	 94.57
+		i-datetime	155	155	154	 99.35	 99.35	 99.35
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	226	218	 96.46	 97.76	 97.10
+		b-aname	247	245	241	 98.37	 97.57	 97.97
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	79	79	100.00	 98.75	 99.37
+		b-email	6	12	6	 50.00	100.00	 66.67
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	3	3	100.00	 50.00	 66.67
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.82	 93.66	 92.73
+		Avg2.	2205	2205	2152	 97.60	 97.60	 97.60
+
+
+	Current max tag-based F1:  97.60 (iteration 32)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 33
+	Log-likelihood                       =       -350.464995
+	Norm(log-likelihood gradient vector) =         14.225839
+	Norm(lambda vector)                  =        152.507663
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1062	1046	 98.49	 98.87	 98.68
+		b-location	93	91	87	 95.60	 93.55	 94.57
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	220	215	 97.73	 96.41	 97.07
+		b-aname	247	243	239	 98.35	 96.76	 97.55
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	81	80	 98.77	100.00	 99.38
+		b-email	6	12	6	 50.00	100.00	 66.67
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	17	15	 88.24	 75.00	 81.08
+		b-number	6	6	3	 50.00	 50.00	 50.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.31	 93.35	 91.28
+		Avg2.	2205	2205	2151	 97.55	 97.55	 97.55
+
+
+	Current max tag-based F1:  97.60 (iteration 32)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 34
+	Log-likelihood                       =       -335.219535
+	Norm(log-likelihood gradient vector) =         10.452846
+	Norm(lambda vector)                  =        155.239533
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1054	1043	 98.96	 98.58	 98.77
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	222	216	 97.30	 96.86	 97.08
+		b-aname	247	250	243	 97.20	 98.38	 97.79
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	12	6	 50.00	100.00	 66.67
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	17	15	 88.24	 75.00	 81.08
+		b-number	6	7	3	 42.86	 50.00	 46.15
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 88.93	 93.46	 91.14
+		Avg2.	2205	2205	2153	 97.64	 97.64	 97.64
+
+
+	Current max tag-based F1:  97.64 (iteration 34)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 35
+	Log-likelihood                       =       -328.094593
+	Norm(log-likelihood gradient vector) =          8.074113
+	Norm(lambda vector)                  =        158.060433
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1052	1043	 99.14	 98.58	 98.86
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	223	217	 97.31	 97.31	 97.31
+		b-aname	247	250	243	 97.20	 98.38	 97.79
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	81	80	 98.77	100.00	 99.38
+		b-email	6	12	6	 50.00	100.00	 66.67
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	18	16	 88.89	 80.00	 84.21
+		b-number	6	9	3	 33.33	 50.00	 40.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 88.41	 93.76	 91.00
+		Avg2.	2205	2205	2154	 97.69	 97.69	 97.69
+
+
+	Current max tag-based F1:  97.69 (iteration 35)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 36
+	Log-likelihood                       =       -325.128692
+	Norm(log-likelihood gradient vector) =          6.450126
+	Norm(lambda vector)                  =        156.082062
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1055	1045	 99.05	 98.77	 98.91
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	19	16	 84.21	100.00	 91.43
+		i-location	223	222	216	 97.30	 96.86	 97.08
+		b-aname	247	247	242	 97.98	 97.98	 97.98
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	81	80	 98.77	100.00	 99.38
+		b-email	6	12	6	 50.00	100.00	 66.67
+		b-cname	39	38	37	 97.37	 94.87	 96.10
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	22	16	 72.73	 80.00	 76.19
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 88.65	 93.55	 91.04
+		Avg2.	2205	2205	2153	 97.64	 97.64	 97.64
+
+
+	Current max tag-based F1:  97.69 (iteration 35)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 37
+	Log-likelihood                       =       -320.502954
+	Norm(log-likelihood gradient vector) =          7.091689
+	Norm(lambda vector)                  =        155.482326
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1055	1045	 99.05	 98.77	 98.91
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	18	16	 88.89	100.00	 94.12
+		i-location	223	216	215	 99.54	 96.41	 97.95
+		b-aname	247	248	244	 98.39	 98.79	 98.59
+		i-aname	136	135	130	 96.30	 95.59	 95.94
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	41	35	 85.37	 94.59	 89.74
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	24	16	 66.67	 80.00	 72.73
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 88.79	 93.74	 91.20
+		Avg2.	2205	2205	2155	 97.73	 97.73	 97.73
+
+
+	Current max tag-based F1:  97.73 (iteration 37)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 38
+	Log-likelihood                       =       -316.739312
+	Norm(log-likelihood gradient vector) =          5.704100
+	Norm(lambda vector)                  =        155.660479
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1052	1044	 99.24	 98.68	 98.96
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	244	 97.99	 98.79	 98.39
+		i-aname	136	135	130	 96.30	 95.59	 95.94
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	38	35	 92.11	 94.59	 93.33
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	25	17	 68.00	 85.00	 75.56
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.40	 94.11	 91.70
+		Avg2.	2205	2205	2156	 97.78	 97.78	 97.78
+
+
+	Current max tag-based F1:  97.78 (iteration 38)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 39
+	Log-likelihood                       =       -313.721128
+	Norm(log-likelihood gradient vector) =          5.356383
+	Norm(lambda vector)                  =        156.475798
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1058	1048	 99.05	 99.05	 99.05
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	218	215	 98.62	 96.41	 97.51
+		b-aname	247	248	243	 97.98	 98.38	 98.18
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	37	35	 94.59	 94.59	 94.59
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	24	17	 70.83	 85.00	 77.27
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.88	 94.11	 91.94
+		Avg2.	2205	2205	2159	 97.91	 97.91	 97.91
+
+
+	Current max tag-based F1:  97.91 (iteration 39)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 40
+	Log-likelihood                       =       -309.489855
+	Norm(log-likelihood gradient vector) =          7.689270
+	Norm(lambda vector)                  =        157.621238
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1048	 99.15	 99.05	 99.10
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	218	215	 98.62	 96.41	 97.51
+		b-aname	247	250	244	 97.60	 98.79	 98.19
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	37	35	 94.59	 94.59	 94.59
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	15	13	 86.67	100.00	 92.86
+		i-cname	20	23	17	 73.91	 85.00	 79.07
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.05	 94.14	 92.05
+		Avg2.	2205	2205	2160	 97.96	 97.96	 97.96
+
+
+	Current max tag-based F1:  97.96 (iteration 40)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 41
+	Log-likelihood                       =       -307.887613
+	Norm(log-likelihood gradient vector) =          4.257791
+	Norm(lambda vector)                  =        157.536359
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1052	1045	 99.33	 98.77	 99.05
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	222	216	 97.30	 96.86	 97.08
+		b-aname	247	251	245	 97.61	 99.19	 98.39
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	38	36	 94.74	 97.30	 96.00
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	23	17	 73.91	 85.00	 79.07
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.38	 94.34	 92.32
+		Avg2.	2205	2205	2160	 97.96	 97.96	 97.96
+
+
+	Current max tag-based F1:  97.96 (iteration 40)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 42
+	Log-likelihood                       =       -306.236554
+	Norm(log-likelihood gradient vector) =          4.173854
+	Norm(lambda vector)                  =        157.299641
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1053	1046	 99.34	 98.87	 99.10
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	245	 98.00	 99.19	 98.59
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	38	36	 94.74	 97.30	 96.00
+		i-number	12	14	12	 85.71	100.00	 92.31
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	24	17	 70.83	 85.00	 77.27
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.24	 94.35	 92.25
+		Avg2.	2205	2205	2161	 98.00	 98.00	 98.00
+
+
+	Current max tag-based F1:  98.00 (iteration 42)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 43
+	Log-likelihood                       =       -304.115543
+	Norm(log-likelihood gradient vector) =          4.330509
+	Norm(lambda vector)                  =        157.001698
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1052	1046	 99.43	 98.87	 99.15
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	245	 98.00	 99.19	 98.59
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	25	17	 68.00	 85.00	 75.56
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.38	 94.45	 91.84
+		Avg2.	2205	2205	2161	 98.00	 98.00	 98.00
+
+
+	Current max tag-based F1:  98.00 (iteration 42)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 44
+	Log-likelihood                       =       -301.755375
+	Norm(log-likelihood gradient vector) =          5.190826
+	Norm(lambda vector)                  =        156.725448
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1058	1048	 99.05	 99.05	 99.05
+		b-location	93	89	86	 96.63	 92.47	 94.51
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	224	218	 97.32	 97.76	 97.54
+		b-aname	247	247	243	 98.38	 98.38	 98.38
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	19	17	 89.47	 85.00	 87.18
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.64	 94.40	 92.48
+		Avg2.	2205	2205	2162	 98.05	 98.05	 98.05
+
+
+	Current max tag-based F1:  98.05 (iteration 44)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 45
+	Log-likelihood                       =       -299.043770
+	Norm(log-likelihood gradient vector) =         10.785544
+	Norm(lambda vector)                  =        156.614837
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1053	1047	 99.43	 98.96	 99.19
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	249	245	 98.39	 99.19	 98.79
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	24	17	 70.83	 85.00	 77.27
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.53	 94.45	 91.93
+		Avg2.	2205	2205	2162	 98.05	 98.05	 98.05
+
+
+	Current max tag-based F1:  98.05 (iteration 44)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 46
+	Log-likelihood                       =       -298.113628
+	Norm(log-likelihood gradient vector) =          5.166899
+	Norm(lambda vector)                  =        156.624654
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	245	 98.39	 99.19	 98.79
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	25	17	 68.00	 85.00	 75.56
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.48	 94.44	 91.89
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.14 (iteration 46)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 47
+	Log-likelihood                       =       -296.441916
+	Norm(log-likelihood gradient vector) =          2.873959
+	Norm(lambda vector)                  =        156.660331
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	87	 96.67	 93.55	 95.08
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	245	 98.39	 99.19	 98.79
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	25	17	 68.00	 85.00	 75.56
+		b-number	6	5	3	 60.00	 50.00	 54.55
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 89.48	 94.44	 91.89
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.14 (iteration 46)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 48
+	Log-likelihood                       =       -294.699608
+	Norm(log-likelihood gradient vector) =          2.637960
+	Norm(lambda vector)                  =        156.772898
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1050	 99.15	 99.24	 99.20
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	130	130	100.00	 95.59	 97.74
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	24	16	 66.67	 80.00	 72.73
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 90.35	 94.20	 92.23
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.14 (iteration 46)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 49
+	Log-likelihood                       =       -292.290762
+	Norm(log-likelihood gradient vector) =          2.865994
+	Norm(lambda vector)                  =        156.879355
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1066	1051	 98.59	 99.34	 98.96
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	216	215	 99.54	 96.41	 97.95
+		b-aname	247	245	242	 98.78	 97.98	 98.37
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.13	 94.13	 92.60
+		Avg2.	2205	2205	2162	 98.05	 98.05	 98.05
+
+
+	Current max tag-based F1:  98.14 (iteration 46)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 50
+	Log-likelihood                       =       -292.332757
+	Norm(log-likelihood gradient vector) =         25.153546
+	Norm(lambda vector)                  =        156.935292
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1064	1051	 98.78	 99.34	 99.06
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	246	243	 98.78	 98.38	 98.58
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.11	 94.15	 92.61
+		Avg2.	2205	2205	2163	 98.10	 98.10	 98.10
+
+
+	Current max tag-based F1:  98.14 (iteration 46)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 51
+	Log-likelihood                       =       -289.750020
+	Norm(log-likelihood gradient vector) =         12.559681
+	Norm(lambda vector)                  =        156.890399
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1062	1051	 98.96	 99.34	 99.15
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.12	 94.20	 92.64
+		Avg2.	2205	2205	2165	 98.19	 98.19	 98.19
+
+
+	Current max tag-based F1:  98.19 (iteration 51)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 52
+	Log-likelihood                       =       -290.425829
+	Norm(log-likelihood gradient vector) =          5.390985
+	Norm(lambda vector)                  =        156.878119
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1062	1051	 98.96	 99.34	 99.15
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	20	16	 80.00	 80.00	 80.00
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.12	 94.20	 92.64
+		Avg2.	2205	2205	2165	 98.19	 98.19	 98.19
+
+
+	Current max tag-based F1:  98.19 (iteration 51)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 53
+	Log-likelihood                       =       -288.958836
+	Norm(log-likelihood gradient vector) =          2.982431
+	Norm(lambda vector)                  =        156.887828
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1060	1051	 99.15	 99.34	 99.24
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.19	 94.56	 92.85
+		Avg2.	2205	2205	2167	 98.28	 98.28	 98.28
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 54
+	Log-likelihood                       =       -287.755476
+	Norm(log-likelihood gradient vector) =          2.043321
+	Norm(lambda vector)                  =        156.827277
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1056	1048	 99.24	 99.05	 99.15
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.12	 94.57	 92.81
+		Avg2.	2205	2205	2165	 98.19	 98.19	 98.19
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 55
+	Log-likelihood                       =       -287.139512
+	Norm(log-likelihood gradient vector) =          2.270889
+	Norm(lambda vector)                  =        156.760516
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1056	1048	 99.24	 99.05	 99.15
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.12	 94.57	 92.81
+		Avg2.	2205	2205	2165	 98.19	 98.19	 98.19
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 56
+	Log-likelihood                       =       -286.582131
+	Norm(log-likelihood gradient vector) =          2.560595
+	Norm(lambda vector)                  =        156.689261
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1055	1046	 99.15	 98.87	 99.01
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	223	218	 97.76	 97.76	 97.76
+		b-aname	247	252	246	 97.62	 99.60	 98.60
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	38	36	 94.74	 97.30	 96.00
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	19	17	 89.47	 85.00	 87.18
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.63	 94.43	 93.01
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 57
+	Log-likelihood                       =       -286.472342
+	Norm(log-likelihood gradient vector) =          6.167741
+	Norm(lambda vector)                  =        156.703897
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1055	1046	 99.15	 98.87	 99.01
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	251	246	 98.01	 99.60	 98.80
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.13	 94.54	 92.80
+		Avg2.	2205	2205	2163	 98.10	 98.10	 98.10
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 58
+	Log-likelihood                       =       -285.708586
+	Norm(log-likelihood gradient vector) =          3.324998
+	Norm(lambda vector)                  =        156.670831
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1056	1047	 99.15	 98.96	 99.05
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.15	 94.55	 92.82
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 59
+	Log-likelihood                       =       -285.778876
+	Norm(log-likelihood gradient vector) =          1.786263
+	Norm(lambda vector)                  =        156.634830
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1056	1047	 99.15	 98.96	 99.05
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	131	130	 99.24	 95.59	 97.38
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.15	 94.55	 92.82
+		Avg2.	2205	2205	2164	 98.14	 98.14	 98.14
+
+
+	Current max tag-based F1:  98.28 (iteration 53)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 60
+	Log-likelihood                       =       -285.626125
+	Norm(log-likelihood gradient vector) =          2.811239
+	Norm(lambda vector)                  =        156.658235
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1060	1051	 99.15	 99.34	 99.24
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	246	 98.80	 99.60	 99.19
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.26	 94.59	 92.90
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 61
+	Log-likelihood                       =       -285.326227
+	Norm(log-likelihood gradient vector) =          1.376236
+	Norm(lambda vector)                  =        156.581258
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1050	 99.15	 99.24	 99.20
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.24	 94.58	 92.88
+		Avg2.	2205	2205	2167	 98.28	 98.28	 98.28
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 62
+	Log-likelihood                       =       -285.479884
+	Norm(log-likelihood gradient vector) =          1.933858
+	Norm(lambda vector)                  =        156.514140
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1060	1051	 99.15	 99.34	 99.24
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	246	 98.80	 99.60	 99.19
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.26	 94.59	 92.90
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 63
+	Log-likelihood                       =       -285.324379
+	Norm(log-likelihood gradient vector) =          1.314976
+	Norm(lambda vector)                  =        156.566639
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1061	1051	 99.06	 99.34	 99.20
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	247	244	 98.79	 98.79	 98.79
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	21	17	 80.95	 85.00	 82.93
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.19	 94.54	 92.83
+		Avg2.	2205	2205	2166	 98.23	 98.23	 98.23
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 64
+	Log-likelihood                       =       -284.446141
+	Norm(log-likelihood gradient vector) =          5.716288
+	Norm(lambda vector)                  =        156.392585
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1053	1047	 99.43	 98.96	 99.19
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.18	 94.90	 93.00
+		Avg2.	2205	2205	2166	 98.23	 98.23	 98.23
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 65
+	Log-likelihood                       =       -284.548429
+	Norm(log-likelihood gradient vector) =          3.086777
+	Norm(lambda vector)                  =        156.351914
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	88	 96.70	 94.62	 95.65
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	248	245	 98.79	 99.19	 98.99
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.25	 94.87	 93.03
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 66
+	Log-likelihood                       =       -284.267917
+	Norm(log-likelihood gradient vector) =          3.284872
+	Norm(lambda vector)                  =        156.378310
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.26	 94.89	 93.04
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 67
+	Log-likelihood                       =       -283.729241
+	Norm(log-likelihood gradient vector) =          1.533898
+	Norm(lambda vector)                  =        156.344145
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.26	 94.89	 93.04
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 68
+	Log-likelihood                       =       -283.317590
+	Norm(log-likelihood gradient vector) =          1.710752
+	Norm(lambda vector)                  =        156.313547
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.26	 94.89	 93.04
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 69
+	Log-likelihood                       =       -282.561345
+	Norm(log-likelihood gradient vector) =          1.788971
+	Norm(lambda vector)                  =        156.235726
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1053	1047	 99.43	 98.96	 99.19
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	221	216	 97.74	 96.86	 97.30
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.71	 95.95	 93.78
+		Avg2.	2205	2205	2167	 98.28	 98.28	 98.28
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 70
+	Log-likelihood                       =       -281.485786
+	Norm(log-likelihood gradient vector) =          2.025769
+	Norm(lambda vector)                  =        156.068696
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1049	 99.24	 99.15	 99.20
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	216	215	 99.54	 96.41	 97.95
+		b-aname	247	252	246	 97.62	 99.60	 98.60
+		i-aname	136	133	130	 97.74	 95.59	 96.65
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	38	36	 94.74	 97.30	 96.00
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.70	 95.71	 93.67
+		Avg2.	2205	2205	2166	 98.23	 98.23	 98.23
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 71
+	Log-likelihood                       =       -282.000915
+	Norm(log-likelihood gradient vector) =          5.483015
+	Norm(lambda vector)                  =        155.837716
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1056	1049	 99.34	 99.15	 99.24
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	251	246	 98.01	 99.60	 98.80
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.76	 95.93	 93.80
+		Avg2.	2205	2205	2168	 98.32	 98.32	 98.32
+
+
+	Current max tag-based F1:  98.32 (iteration 60)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 72
+	Log-likelihood                       =       -281.187842
+	Norm(log-likelihood gradient vector) =          2.131748
+	Norm(lambda vector)                  =        155.967035
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.79	 95.94	 93.81
+		Avg2.	2205	2205	2169	 98.37	 98.37	 98.37
+
+
+	Current max tag-based F1:  98.37 (iteration 72)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 73
+	Log-likelihood                       =       -280.963336
+	Norm(log-likelihood gradient vector) =          1.173413
+	Norm(lambda vector)                  =        155.899478
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	90	88	 97.78	 94.62	 96.17
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.79	 95.94	 93.81
+		Avg2.	2205	2205	2169	 98.37	 98.37	 98.37
+
+
+	Current max tag-based F1:  98.37 (iteration 72)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 74
+	Log-likelihood                       =       -280.949617
+	Norm(log-likelihood gradient vector) =          1.046150
+	Norm(lambda vector)                  =        155.821897
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	246	 98.80	 99.60	 99.19
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.81	 96.00	 93.86
+		Avg2.	2205	2205	2170	 98.41	 98.41	 98.41
+
+
+	Current max tag-based F1:  98.41 (iteration 74)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 75
+	Log-likelihood                       =       -280.951436
+	Norm(log-likelihood gradient vector) =          1.246574
+	Norm(lambda vector)                  =        155.715597
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1057	1050	 99.34	 99.24	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	21	16	 76.19	100.00	 86.49
+		i-location	223	217	215	 99.08	 96.41	 97.73
+		b-aname	247	249	246	 98.80	 99.60	 99.19
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	39	38	 97.44	 97.44	 97.44
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	5	4	 80.00	 66.67	 72.73
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.81	 96.00	 93.86
+		Avg2.	2205	2205	2170	 98.41	 98.41	 98.41
+
+
+	Current max tag-based F1:  98.41 (iteration 74)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 76
+	Log-likelihood                       =       -280.932274
+	Norm(log-likelihood gradient vector) =          1.018282
+	Norm(lambda vector)                  =        155.792764
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 77
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1052	1046	 99.43	 98.87	 99.15
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	222	217	 97.75	 97.31	 97.53
+		b-aname	247	250	246	 98.40	 99.60	 98.99
+		i-aname	136	133	131	 98.50	 96.32	 97.40
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.34	 94.99	 93.13
+		Avg2.	2205	2205	2167	 98.28	 98.28	 98.28
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 78
+	Log-likelihood                       =       -281.728524
+	Norm(log-likelihood gradient vector) =          4.495291
+	Norm(lambda vector)                  =        155.358452
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 79
+	Log-likelihood                       =       -280.503725
+	Norm(log-likelihood gradient vector) =          2.816886
+	Norm(lambda vector)                  =        155.477342
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 80
+	Log-likelihood                       =       -280.452043
+	Norm(log-likelihood gradient vector) =          3.522202
+	Norm(lambda vector)                  =        155.491588
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 81
+	Log-likelihood                       =       -280.446443
+	Norm(log-likelihood gradient vector) =          3.619979
+	Norm(lambda vector)                  =        155.493516
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 82
+	Log-likelihood                       =       -280.445698
+	Norm(log-likelihood gradient vector) =          3.633461
+	Norm(lambda vector)                  =        155.493781
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 83
+	Log-likelihood                       =       -280.445596
+	Norm(log-likelihood gradient vector) =          3.635320
+	Norm(lambda vector)                  =        155.493818
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 84
+	Log-likelihood                       =       -280.445582
+	Norm(log-likelihood gradient vector) =          3.635577
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 85
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635612
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 86
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635617
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 87
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635617
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 88
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 89
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 90
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 91
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 92
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 93
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 94
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 1 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 1 seconds
+
+Iteration: 95
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 96
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+	Iteration elapsed: 0 seconds
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
+
+	Current max tag-based F1:  98.46 (iteration 76)
+	Training iteration elapsed (including testing & evaluation time): 0 seconds
+
+Iteration: 97
+	Log-likelihood                       =       -280.445580
+	Norm(log-likelihood gradient vector) =          3.635618
+	Norm(lambda vector)                  =        155.493823
+LBFGS routine encounters an error
+
+The training process elapsed: 15 seconds
+
+	Label-based performance evaluation:
+
+		Label	Manual	Model	Match	Pre.(%)	Rec.(%)	F1-Measure(%)
+		-----	------	-----	-----	-------	-------	-------------
+		o	1058	1059	1051	 99.24	 99.34	 99.29
+		b-location	93	91	89	 97.80	 95.70	 96.74
+		i-datetime	155	154	154	100.00	 99.35	 99.68
+		b-cnumber	16	22	16	 72.73	100.00	 84.21
+		i-location	223	218	216	 99.08	 96.86	 97.96
+		b-aname	247	248	246	 99.19	 99.60	 99.39
+		i-aname	136	132	131	 99.24	 96.32	 97.76
+		b-datetime	80	80	80	100.00	100.00	100.00
+		b-email	6	10	6	 60.00	100.00	 75.00
+		b-cname	39	38	38	100.00	 97.44	 98.70
+		b-url	37	39	37	 94.87	100.00	 97.37
+		i-number	12	13	12	 92.31	100.00	 96.00
+		i-url	64	61	61	100.00	 95.31	 97.60
+		i-cnumber	13	14	13	 92.86	100.00	 96.30
+		i-cname	20	22	18	 81.82	 90.00	 85.71
+		b-number	6	4	3	 75.00	 50.00	 60.00
+		-----	------	-----	-----	-------	-------	-------------
+		Avg1.				 91.51	 95.00	 93.22
+		Avg2.	2205	2205	2171	 98.46	 98.46	 98.46
+
